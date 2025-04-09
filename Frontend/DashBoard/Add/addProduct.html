@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = ' stylesheet '  href = 'addProduct.css' >
+    <title>Document</title>
+</head>
+<body>
+    <h1>Produkt hinzufügen</h1>
+    <form onsubmit="return addProduct()" >
+        <input type=" text" id="name" placeholder = "Name">
+        <input type=" text" id="price" placeholder = "Preis">
+        <input type ='file' id="image" placeholder = "Bild">
+        <button type="submit">Produkt hinzufügen</button>
+    </form>
+    <script src="./addProduct.js"></script>
+</body>
+</html>

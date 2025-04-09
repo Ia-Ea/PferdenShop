@@ -1,0 +1,95 @@
+/* Grundlegende Stile für den Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+  }
+  
+  /* Header-Styling */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5563DE;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header button,
+  header a {
+    background-color: #fff;
+    color: #5563DE;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  header button:hover,
+  header a:hover {
+    background-color: #eaeaea;
+    transform: translateY(-2px);
+  }
+  
+  /* Tabellen-Styling */
+  table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  thead td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  tbody td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Wechselnde Zeilenfarben im Tabellenkörper */
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Beispiel für Buttons innerhalb der Tabelle (Bearbeiten, Löschen) */
+  .btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    transition: opacity 0.3s ease;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .btn-edit {
+    background-color: #28a745;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545;
+  }
+  

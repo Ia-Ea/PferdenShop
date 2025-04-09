@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./addHorse.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Pferde Hinzufügen</h1>
+    <form  onsubmit= 'return addhorse()'  id="uploadForm" enctype="multipart/form-data">  <!-- mit onsubmit immer (return False) -->
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="Gender" placeholder="Geschlecht">
+        <input type="text" id="price" placeholder="Prise"> 
+        <input type="text" id="age" placeholder="Alter">
+        <input type="text" id="height" placeholder="Große">
+        <input type="text" id="description" placeholder="Beschreibung">
+        <input type="file" id="image" placeholder="Bild">
+        <button type="submit">Hinzufügen</button>
+
+    </form>
+
+    <script src = "./addHorse.js"> </script>
+    
+</body>
+</html>

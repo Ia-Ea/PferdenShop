@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editHorse.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welches Pferd möchtest du bearbeiten?</h2>
+    <input type="text" id="search-horse" placeholder="Pferde-ID oder Name eingeben">
+    <button onclick="searchHorse()">Suchen</button>
+
+<!-- Bearbeitungsformular -->
+    <div id="edit-modal" style="display: none;">       <!-- display: none; = Formular wird nicht angezeigt -->
+        <h2>Pferd bearbeiten</h2>
+        <input type="hidden" id="edit-id" readonly>
+        <input type="text" id="edit-name" placeholder="Name">
+        <input type="text" id="edit-gender" placeholder="Geschlecht">
+        <input type="number" id="edit-price" placeholder="Preis">
+        <input type="number" id="edit-age" placeholder="Alter">
+        <input type="number" id="edit-height" placeholder="Höhe">
+        <input id="edit-description" placeholder="Beschreibung"></input>
+        <input type="file" id="edit-image" placeholder="Bild-URL">
+        
+        <button onclick="saveHorse()">Speichern</button>
+        <button onclick="closeModal()">Abbrechen</button>
+    </div>
+    <script src="editHorse.js"></script>
+    
+</body>
+</html>
